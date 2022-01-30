@@ -3,7 +3,9 @@ token:
   secret: user_token_ecommerce-dev
 
 gateway:
-  ip: 127.0.0.1
+  ip: 172.18.0.5
 
 order_service:
   url: http://ORDER-SERVICE/order-service/%s/orders
+  exception:
+    orders_is_empty: There is no item.

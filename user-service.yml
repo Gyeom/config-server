@@ -3,14 +3,17 @@ spring:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb
     username: sa
-    password: '{cipher}AQCMXyTWbkZ4DE69KyhnijhXBdz6+U1GZe2J1SbR2PokooXI2nBGPfeguAy6RSqKYb7qHftJy9LL6SlJpfl3Ju5McwzGk5GGMCURceJBYi7zFgpFrbi1rAE0HH2xPjx3DuRuED9I2SN2uAf4dg3BY1hNJwh+iMI0MUqAPIKYJJHEDuTYFv1OSG9+FThnFWYggra9bWYd0J1R7hnV3wM9JzmS4dy7Q4QWftIm2N9Dh75aCW1aqPytyL6h5/b7QOe7OlV5pHMlaJRPS79PRKASz4IegzP0HmBWQpP1Zaazh5/dEB3mvXjBdklIHfNRI9FvuPUrrXCaTr/7r2uHYOKnhtzBPAiwvbf//5+DuKQDgZZhAJy3h/ubIGgVvgvXQb45egQ='
+    password: '{cipher}AQAw2JmeyEIs4fpmhHbNIDx6G8nJxN7rKK5/D3DQ/1ahwjUDDatpqr13l0ntULa67keJgU0IwbXB/Y4iL6zM5+uaDeMACv7oB
+    XUP5t2KwHd8ENpwj6Veguva91iVQc568l07agsHtSWsnJ2TnvzcxzoWtshP4xrNEEHU2aZUqbpM3Z7uBfhvi2p2hfXICAxujtHqg1PfN12nv4ZQ9kVZj
+    Q15RsdnE6zZ8TNyNTIXFoosE+rRvzyuh7o9fFkR2kFwxPVMlKhthM1ZL+K1eNQELWImn3I1Ol/8+jKMp8tTumbiucITs5EDF0AlM9re7w691LahMColr
+    Zd90WrrCPVWDxmNuBQ+akdOado89ETiurthoH6rLeKqKP1BfFjkGt1xvCg='
 
 token:
   expiration_time: 86400000
   secret: token_user_service
 
 gateway:
-  ip: 127.0.0.1
+  ip: 172.18.0.5
 
 order_service:
   url: http://127.0.0.1:8000/order-service/%s/orders
